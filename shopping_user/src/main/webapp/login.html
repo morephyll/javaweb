@@ -1,0 +1,96 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>用户登录 - 润天在线商城</title>
+    <script language="JavaScript" type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" src="static/js/jquery.d.imagechange.js"></script>
+    <script language="JavaScript" src="static/js/MSClass.js"></script>
+    <script language="JavaScript" type="text/javascript" src="static/js/layer.min.js"></script>
+    <link href="static/css/css.css" rel="stylesheet" type="text/css">
+    <script src="static/js/login.js"></script>
+    <script src="static/layui/layui.js"></script>
+    <link rel="stylesheet" href="static/layui/css/layui.css">
+
+</head>
+
+<body>
+
+    <div class="top_all" id="top_all">
+        <div class="top_main" id="top_main" style="position:relative;z-index:10;">
+
+            <div id="mokuai_4"
+                style="overflow:hidden;position:absolute;width:268px; height:81px; top:17px; left:4px; z-index:1">
+                <!-- <div style="line-height:px"> -->
+                <div style="line-height: inherit">
+                    <div id="tb_last_box_4"><a href="index.html" target="_blank"></a><a href="index.html"><img alt=""
+                                src="static/picture/logo.gif"></a></div>
+
+                </div>
+            </div>
+
+            <div id="mokuai_6"
+                style="overflow:hidden;position:absolute;width:357px; height:37px; top:15px; left:600px; z-index:1;text-align:right">
+                <div style="">
+                    <span id="Login_Box_Word"><span class="dlbtn"><a href="">登录</a></span> <span
+                            style="padding-left:10px;" class="zcbtn"><a href="regist.html">注册</a></span> </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main_css2 clearfix" id="main_body" style="position:relative">
+        <div class="box_left">
+            <div class="breadcrumb">当前位置: 用户登录</div>
+            <div class="form box_css_3">
+                <div class="box_css_main_3">
+                    <div id="login_div" style=" margin: 20px auto;">
+                        <form  method="post" target="temp_frame" id="formpost">
+                            <table width="312" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="133" height="40" align="right">用户名：</td>
+                                    <td width="196"><input name="userAcc" id="login_username" maxlength="16"
+                                            class="input_style" style="width:120px;margin-bottom:3px;"></td>
+                                </tr>
+                                <tr>
+                                    <td height="40" align="right">密　码：</td>
+                                    <td><input name="userPwd" id="login_password" maxlength="32"
+                                            class="input_style" type="password" style="width:120px;margin-bottom:3px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="40" align="right">验证码：</td>
+                                    <td><span style="float:left"><input  name="inputCode" id="VerifyCode"
+                                                style="width:33px;margin-bottom:7px; text-transform:uppercase;"
+                                                class="input_style" maxlength="4"></span> <span
+                                            style="float:left; margin-left:4px;"><img id="ImgCheckCode"
+                                                src="code" align="absmiddle" title="看不清，换一张" style="cursor: pointer"></span></td>
+                                </tr>
+                                <tr>
+                                    <td height="33" align="center">&nbsp;</td>
+                                    <td height="33" align="left"><input type="button" id="loginBtn" value="登 录" class="button_style">
+                                        <input type="hidden" name="turl" value="/login/">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="35" colspan="2" align="center"> 还没有注册？<a href="regist.html"
+                                            style="text-decoration:underline">马上注册一个吧</a></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot_all" id="bot_all">
+        <div class="bot_main" id="bot_main" style="position:relative">
+
+
+        </div>
+    </div>
+</body>
+
+</html>

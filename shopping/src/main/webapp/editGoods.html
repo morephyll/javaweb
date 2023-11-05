@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>后台管理系统-HTML5后台管理系统</title>
+	<meta name="keywords"  content="设置关键词..." />
+	<meta name="description" content="设置描述..." />
+	<meta name="author" content="DeathGhost" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/plug-ins/customScrollbar.min.js"></script>
+	<script src="javascript/plug-ins/echarts.min.js"></script>
+	<script src="javascript/plug-ins/layerUi/layer.js"></script>
+	<!-- <script src="editor/ueditor.config.js"></script> -->
+	<!-- <script src="editor/ueditor.all.js"></script> -->
+	<script src="javascript/plug-ins/pagination.js"></script>
+	<script src="javascript/public.js"></script>
+	<script src="layui/layui.js"></script>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script src="javascript/pages/editGoods.js"></script>
+	<script src="javascript/pages/public.js"></script>
+
+
+	<style>
+		.layui-form-label{
+			width: auto;
+		}
+
+		input[type=file]{
+			opacity: 0;
+			width: 113.6px;
+			height: 38px;
+			position: absolute;
+			margin-left: -113.6px;
+		}
+
+	</style>
+</head>
+<body>
+<form class="layui-form" action="" style="padding: 50px;">
+	<input type="hidden" name="goodsId" id="goodsId">
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品编号：</label>
+		<div class="layui-input-block">
+			<input type="text" id="goodsNo" name="goodsNo" required  lay-verify="required" placeholder="请输入商品编号" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品名称：</label>
+		<div class="layui-input-block">
+			<input type="text" id="goodsName" name="goodsName" required  lay-verify="required" placeholder="请输入商品名称" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item" id="goodsTypeFather">
+		<label class="layui-form-label">商品类别：</label>
+		<div class="layui-input-block" id="goodsTypeDiv" style="width: 150px;float: left;margin-left: 10px;">
+			<select lay-filter="changeType"  lay-verify="required" ></select>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">品牌：</label>
+		<div class="layui-input-block">
+			<select name="goodsBrand" lay-verify="required" id="goodsBrand">
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">价格：</label>
+		<div class="layui-input-block">
+			<input type="number" id="goodsPrice" name="goodsPrice" required  lay-verify="required" placeholder="请输入商品价格" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">单位：</label>
+		<div class="layui-input-block">
+			<input type="text" id="goodsUnits" name="goodsUnits" required  lay-verify="required" placeholder="请输入商品单位（件/个/台/张/千克...）" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">折扣：</label>
+		<div class="layui-input-block">
+			<input type="number" id="goodsDiscount" name="goodsDiscount" required  lay-verify="required" placeholder="请输入商品折扣" autocomplete="off" class="layui-input" >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">库存数量：</label>
+		<div class="layui-input-block">
+			<input type="number" id="repertoryNum" name="repertoryNum" required  lay-verify="required" placeholder="请输入商品库存数量" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">生产日期：</label>
+		<div class="layui-input-block">
+			<input type="date" id="createDate" name="createDate" required  lay-verify="required" placeholder="请选择商品生产日期" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">截止日期：</label>
+		<div class="layui-input-block">
+			<input type="date" id="deadDate" name="deadDate" placeholder="请选择商品生产日期" autocomplete="off" class="layui-input">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品主图：</label>
+		<div class="layui-input-block" style="background-color: #f5dfdf45;min-height: 150px;padding: 10px;">
+			<button type="button" class="layui-btn layui-btn-normal"><i class="layui-icon layui-icon-upload-circle" id="uploadMainImg"></i>上传商品主图</button>
+			<input type="file" id="mainImgInput" onchange="loadImg('mainImgInput','mainImg')"/>
+			<div style="margin-top: 5px">
+				<img src="" id="mainImg" style="width: 100px;height: 100px;"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="text-align: center">商品细节图：<br/>（4张）</label>
+		<div class="layui-input-block" style="background-color: #f5dfdf45;min-height: 150px;padding: 10px;">
+			<button type="button" class="layui-btn layui-btn-normal"><i class="layui-icon layui-icon-upload-circle" id="uploadDetailImg"></i>上传商品详情图</button>
+			<input type="file" id="detailImgInput" multiple onchange="loadImgs('detailImgInput','detailImg')"/>
+			<div style="margin-top: 5px" id="detailImg">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+			<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		</div>
+	</div>
+</form>
+
+<script>
+	//Demo
+	layui.use('form', function(){
+		var form = layui.form;
+
+		//提交
+		form.on('submit(formDemo)', function(data){
+			layer.msg(JSON.stringify(data.field));
+			//这里需要实例化一个FormData来进行文件上传
+			var formData = new FormData();
+			if($("#mainImgInput")[0].files.length>0){
+				//主图
+				formData.append("mainImg",$("#mainImgInput")[0].files[0]);
+			}
+
+			if($("#detailImgInput")[0].files.length>0){
+				for (let i = 0; i < $("#detailImgInput")[0].files.length; i++) {
+					formData.append("detailImg"+i,$("#detailImgInput")[0].files[i])
+				}
+
+			}
+			//遍历js对象
+			for(let i in data.field){
+				//console.log(i,data.field[i]);
+				formData.append(i,data.field[i])
+			}
+
+			$.ajax({
+				type:'POST',
+				url:"goods/upd",
+				data:formData,
+				async:false,
+				processData:false,
+				contentType:false,
+				success:function(result){
+					parent.layer.closeAll()
+					if(result.code>0){
+						parent.layer.msg("修改成功",{icon:1,time:1500})
+					}else{
+						parent.layer.msg("修改失败",{icon:1,time:1500})
+					}
+					parent.findGoodsList()
+				}
+			});
+		});
+
+		form.on('select(changeType)', function (data) {
+			/*console.log(data.elem); //得到select原始DOM对象
+			console.log(data.elem.id); //得到select id 属性
+			console.log(data.elem.name); //得到select name 属性
+			console.log(data.value); //得到被选中的值
+			console.log(data.othis); //得到美化后的DOM对象*/
+			//清除下一级元素
+			$(data.elem).parent().next().remove()
+			addChildType(data.value)
+		});
+	});
+
+</script>
+</body>
+</html>

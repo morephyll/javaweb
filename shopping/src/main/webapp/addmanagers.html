@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>后台管理系统-HTML5后台管理系统</title>
+	<meta name="keywords"  content="设置关键词..." />
+	<meta name="description" content="设置描述..." />
+	<meta name="author" content="DeathGhost" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/plug-ins/customScrollbar.min.js"></script>
+	<script src="javascript/plug-ins/echarts.min.js"></script>
+	<script src="javascript/plug-ins/layerUi/layer.js"></script>
+	<!-- <script src="editor/ueditor.config.js"></script> -->
+	<!-- <script src="editor/ueditor.all.js"></script> -->
+	<script src="javascript/plug-ins/pagination.js"></script>
+	<script src="javascript/public.js"></script>
+	<script src="layui/layui.js"></script>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script src="javascript/pages/public.js"></script>
+
+	<style>
+		.layui-form-label{
+			width: auto;
+		}
+
+		input[type=file]{
+			opacity: 0;
+			width: 113.6px;
+			height: 38px;
+			position: absolute;
+			margin-left: -113.6px;
+		}
+
+	</style>
+</head>
+<body>
+<form class="layui-form" action="" style="padding: 50px;">
+	<div class="layui-form-item">
+		<label class="layui-form-label">账号：</label>
+		<div class="layui-input-block">
+			<input type="text" name="managerAcc" required  lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input" value="shouji-apple-02">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">密码：</label>
+		<div class="layui-input-block">
+			<input type="text" name="managerPwd" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" value="iphone 14pro max">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">真实姓名：</label>
+		<div class="layui-input-block">
+			<input type="text" name="realName" required  lay-verify="required" placeholder="请输入真实姓名" autocomplete="off" class="layui-input" value="iphone 14pro max">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+			<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		</div>
+	</div>
+</form>
+
+<script>
+	//Demo
+	layui.use('form', function(){
+		var form = layui.form;
+
+		//提交
+		form.on('submit(formDemo)', function(data){
+			// layer.msg(JSON.stringify(data.field));
+			// //这里需要实例化一个FormData来进行文件上传
+			// var formData = new FormData();
+			// //主图
+			// formData.append("mainImg",$("#mainImgInput")[0].files[0]);
+			// for (let i = 0; i < $("#detailImgInput")[0].files.length; i++) {
+			// 	formData.append("detailImg"+i,$("#detailImgInput")[0].files[i])
+			// }
+			//
+			// //遍历js对象
+			// for(let i in data.field){
+			// 	//console.log(i,data.field[i]);
+			// 	formData.append(i,data.field[i])
+			// }
+
+			$.ajax({
+				type:'post',
+				url:"manager/add",
+				data:data.field,
+				dataType:"json",
+				success:function(result){
+					parent.layer.closeAll()
+					if(result.code>0){
+						parent.layer.msg("添加成功",{icon:1,time:1500})
+					}else{
+						parent.layer.msg("添加失败",{icon:1,time:1500})
+					}
+					parent.findGoodsList()
+				}
+			});
+		});
+
+		// form.on('select(changeType)', function (data) {
+		// 	/*console.log(data.elem); //得到select原始DOM对象
+		// 	console.log(data.elem.id); //得到select id 属性
+		// 	console.log(data.elem.name); //得到select name 属性
+		// 	console.log(data.value); //得到被选中的值
+		// 	console.log(data.othis); //得到美化后的DOM对象*/
+		// 	//清除下一级元素
+		// 	$(data.elem).parent().next().remove()
+		// 	let goodsTypeStr =  findGoodsTypeList(data.value)
+		//
+		// 	if(goodsTypeStr != ''){
+		// 		$("#goodsTypeFather").append(`
+		// 			<div class="layui-input-block" style="width: 150px;float: left;margin-left: 10px;">
+		// 				<select lay-filter="changeType"  lay-verify="required" >${goodsTypeStr}</select>
+		// 			</div>
+		// 		`)
+		// 		layui.form.render()
+		// 	}else{
+		// 		$("#goodsTypeFather>.layui-input-block:last>select").prop("name","goodsTypeId")
+		// 	}
+		// });
+	});
+</script>
+</body>
+</html>

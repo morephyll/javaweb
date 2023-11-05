@@ -1,0 +1,157 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>用户注册 - 润天在线商城</title>
+    <script language="JavaScript" type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="static/js/layer.min.js"></script>
+    <script language="JavaScript" src="static/js/jquery.d.imagechange.js"></script>
+    <script src="static/js/laydate.js"></script>
+    <script src="static/js/province.js"></script>
+    <script language="JavaScript" src="static/js/MSClass.js"></script>
+    <link href="static/css/css.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="top_all" id="top_all">
+        <div class="top_main" id="top_main" style="position:relative;z-index:10;">
+
+            <div id="mokuai_4"
+                style="overflow:hidden;position:absolute;width:268px; height:81px; top:17px; left:4px; z-index:1">
+                <div style="line-height:px">
+                    <div id="tb_last_box_4"><a href="index.html" target="_blank"></a><a href="index.html"><img alt=""
+                                src="static/picture/logo.gif"></a></div>
+
+                </div>
+            </div>
+
+
+
+            <div id="mokuai_6"
+                style="overflow:hidden;position:absolute;width:357px; height:37px; top:15px; left:600px; z-index:1;text-align:right">
+                <div style="">
+                    <span id="Login_Box_Word"><span class="dlbtn"><a href="login.html">登录</a></span> <span
+                            style="padding-left:10px;" class="zcbtn"><a href="">注册</a></span> </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="main_css1 clearfix" id="main_body" style="position:relative">
+
+        <div class="box_left">
+            <div class="breadcrumb">当前位置:用户注册</div>
+            <div class="form box_css_3">
+                <div class="box_css_main_3" style="position:relative;">
+
+                    <form action="/inc/reguser.asp?act=reguser" method="post" target="temp_frame" id="formpost">
+                        <table border="0" width="%" align="center" cellpadding="5" cellspacing="4">
+                            <tr>
+                                <td colspan="2" align="center"><span style="font-size:14px;font-weight:bold">会员注册</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" width="25%">用户名：</td>
+                                <td>
+                                    <input class="input_style input_style2" type="text" name="username"> <span
+                                        class="required">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">密码：</td>
+                                <td>
+                                    <input class="input_style input_style2" type="password" name="password"> <span
+                                        class="required">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">重复密码：</td>
+                                <td>
+                                    <input class="input_style input_style2" type="password" name="re_password"> <span
+                                        class="required">*</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">真实姓名：</td>
+                                <td>
+                                    <input type='text' name='email' class='input_style input_style2' value="">
+                                    <span class="required">*</span>
+                                </td>
+                            </tr>
+							<tr>
+                                <td align="right">性别：</td>
+                                <td>
+                                    <input type='text' name='email' class='input_style input_style2' value="">
+                                    <span class="required">*</span>
+                                </td>
+                            </tr>
+							<tr>
+                                <td align="right">出生日期：</td>
+                                <td>
+                                    <input type='text' name='email' class='input_style input_style2' value="">
+                                    <span class="required">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">手机号码：</td>
+                                <td>
+                                    <input type='text' name='email' class='input_style input_style2' value="">
+                                    <span class="required">*</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">电子邮箱：</td>
+                                <td>
+                                    <input type='text' name='email' class='input_style input_style2' value="">
+                                </td>
+                            </tr>
+
+
+                           
+                            <tr>
+                                <td colspan="2">
+                                    <div
+                                        style='clear:both; height:1px; font-size:1px; margin:12px; border-top:1px dotted #666666'>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">验证码：</td>
+                                <td>
+                                    <input type="text" style="text-transform:uppercase" class="input_style"
+                                        name="verifycode"> <img src="static/picture/VerifyCode.jpg"
+                                        onclick="this.src='/inc/VerifyCode.asp?r='+Math.random();" align="absmiddle"
+                                        id="verifycode">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" class="button_style" value="提交">
+                                    <input type="reset" class="button_style" value="重置">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot_all" id="bot_all">
+        <div class="bot_main" id="bot_main" style="position:relative">
+
+        </div>
+    </div>
+</body>
+
+</html>

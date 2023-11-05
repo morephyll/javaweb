@@ -1,0 +1,598 @@
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectPage
+DEBUG main org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+DEBUG main org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@63eef88a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = test2@TestApplication, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = test2@TestApplication, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@e874448, started on Tue Jul 11 22:17:24 CST 2023
+DEBUG main org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class TestApplication]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [TestApplication] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@73ad2d6 declaringClass = 'TestApplication', classes = '{}', locations = '{classpath*:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG main org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [TestApplication]
+DEBUG main org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [TestApplication]: using defaults.
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c49835d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e853265, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67205a84, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d0587f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5d76b067, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a17b7b6]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+DEBUG main org.springframework.test.context.support.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.core.env.StandardEnvironment - Activating profiles []
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\CommonController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\GoodsController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\SimpleController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\TypeController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\UsersController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\SimpleService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbladdressService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblevaluateService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblfavoriteService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblgoodsService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblmanagerService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblorderService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblregionService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblshoppingcartService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbltypeService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbluserService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\SimpleServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbladdressServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblevaluateServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblfavoriteServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblgoodsServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblmanagerServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblorderServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblregionServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblshoppingcartServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbltypeServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbluserServiceImpl.class]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 25 bean definitions from URL [file:/D:/newproject/java/ideaproject/shopping/shopping/target/classes/applicationContext.xml]
+DEBUG main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@e874448
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\SimpleMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbladdressMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblevaluateMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblfavoriteMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblgoodsMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblmanagerMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblorderMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblregionMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblshoppingcartMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbltypeMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbluserMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'simpleMapper' and 'net.winco.mapper.SimpleMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbladdressMapper' and 'net.winco.mapper.TbladdressMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblevaluateMapper' and 'net.winco.mapper.TblevaluateMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblfavoriteMapper' and 'net.winco.mapper.TblfavoriteMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblgoodsMapper' and 'net.winco.mapper.TblgoodsMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblmanagerMapper' and 'net.winco.mapper.TblmanagerMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblorderMapper' and 'net.winco.mapper.TblorderMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblregionMapper' and 'net.winco.mapper.TblregionMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblshoppingcartMapper' and 'net.winco.mapper.TblshoppingcartMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbltypeMapper' and 'net.winco.mapper.TbltypeMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbluserMapper' and 'net.winco.mapper.TbluserMapper' mapperInterface
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'commonController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'goodsController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblgoodsServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblgoodsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'datasource'
+DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@2fb3536e'
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectPage
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\mapper\SimpleMapper.xml]'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.getGoodsBrandList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbltypeServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbltypeMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'typeController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'usersController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbluserServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbluserMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbladdressServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbladdressMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblevaluateServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblevaluateMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblfavoriteServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblfavoriteMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblmanagerServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblmanagerMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblorderServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblorderMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblregionServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblregionMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblshoppingcartServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblshoppingcartMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblshoppingcartMapper.selectPage
+DEBUG main org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+DEBUG main org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@63eef88a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = test2@TestApplication, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = test2@TestApplication, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@e874448, started on Tue Jul 11 22:18:18 CST 2023
+DEBUG main org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class TestApplication]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [TestApplication] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@73ad2d6 declaringClass = 'TestApplication', classes = '{}', locations = '{classpath*:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG main org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [TestApplication]
+DEBUG main org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [TestApplication]: using defaults.
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c49835d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e853265, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67205a84, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d0587f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5d76b067, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a17b7b6]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [TestApplication]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [TestApplication]
+DEBUG main org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6ee52dcd testClass = TestApplication, testInstance = TestApplication@ea1a8d5, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+DEBUG main org.springframework.test.context.support.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@4493d195 testClass = TestApplication, locations = '{classpath*:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.core.env.StandardEnvironment - Activating profiles []
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\CommonController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\GoodsController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\SimpleController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\TypeController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\controller\UsersController.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\SimpleService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbladdressService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblevaluateService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblfavoriteService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblgoodsService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblmanagerService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblorderService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblregionService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TblshoppingcartService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbltypeService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\TbluserService.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\SimpleServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbladdressServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblevaluateServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblfavoriteServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblgoodsServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblmanagerServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblorderServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblregionServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TblshoppingcartServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbltypeServiceImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\service\impl\TbluserServiceImpl.class]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 25 bean definitions from URL [file:/D:/newproject/java/ideaproject/shopping/shopping/target/classes/applicationContext.xml]
+DEBUG main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@e874448
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\SimpleMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbladdressMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblevaluateMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblfavoriteMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblgoodsMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblmanagerMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblorderMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblregionMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TblshoppingcartMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbltypeMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\net\winco\mapper\TbluserMapper.class]
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'simpleMapper' and 'net.winco.mapper.SimpleMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbladdressMapper' and 'net.winco.mapper.TbladdressMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblevaluateMapper' and 'net.winco.mapper.TblevaluateMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblfavoriteMapper' and 'net.winco.mapper.TblfavoriteMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblgoodsMapper' and 'net.winco.mapper.TblgoodsMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblmanagerMapper' and 'net.winco.mapper.TblmanagerMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblorderMapper' and 'net.winco.mapper.TblorderMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblregionMapper' and 'net.winco.mapper.TblregionMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tblshoppingcartMapper' and 'net.winco.mapper.TblshoppingcartMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbltypeMapper' and 'net.winco.mapper.TbltypeMapper' mapperInterface
+DEBUG main org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tbluserMapper' and 'net.winco.mapper.TbluserMapper' mapperInterface
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'commonController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'goodsController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblgoodsServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblgoodsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'datasource'
+DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@2fb3536e'
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.SimpleMapper.selectPage
+DEBUG main com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\newproject\java\ideaproject\shopping\shopping\target\classes\mapper\SimpleMapper.xml]'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.getGoodsBrandList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblgoodsMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbltypeServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbltypeMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbltypeMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'typeController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'usersController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbluserServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbluserMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbluserMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbladdressServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tbladdressMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TbladdressMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblevaluateServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblevaluateMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblevaluateMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblfavoriteServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblfavoriteMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblfavoriteMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblmanagerServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblmanagerMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblmanagerMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblorderServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblorderMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectOne
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectCount
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectMaps
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectMapsPage
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectObjs
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectList
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblorderMapper.selectPage
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblregionServiceImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tblregionMapper'
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.insert
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.delete
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.deleteBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.update
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.updateById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectById
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectBatchIds
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectByMap
+DEBUG main com.baomidou.mybatisplus.core.MybatisConfiguration - addMappedStatement: net.winco.mapper.TblregionMapper.selectOne

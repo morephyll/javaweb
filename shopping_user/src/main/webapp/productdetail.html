@@ -1,0 +1,195 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>商品信息 - 在线商城模板</title>
+    <script language="JavaScript" type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="static/js/layer.min.js"></script>
+    <script language="JavaScript" src="static/js/jquery.d.imagechange.js"></script>
+    <script language="JavaScript" src="static/js/MSClass.js"></script>
+
+    <script src="static/js/fixIE.js"></script>
+    <link href="static/css/css.css" rel="stylesheet" type="text/css">
+	<link href="static/css/fullSlide.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="static/js/fullslide.js"></script>
+	<script language="JavaScript" type="text/javascript" src="static/js/superslide.2.1.js"></script>
+    <script src="static/js/public.js"></script>
+    <script src="static/js/productdetail.js"></script>
+    <script src="static/layui/layui.js"></script>
+    <link rel="stylesheet" href="static/layui/css/layui.css">
+</head>
+
+<body>
+
+<div class="top_all" id="top_all">
+    <div class="top_main" id="top_main" style="position:relative;z-index:10;">
+
+        <div id="mokuai_4" style="overflow:hidden;position:absolute;width:268px; height:81px; top:17px; left:4px; z-index:1">
+            <div>
+                <div id="tb_last_box_4"><a href="index.html" target="_blank"></a><a href="index.html">
+                    <img alt="" src="static/picture/logo.gif"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mokuai_5" style="overflow:hidden;position:absolute;width:272px; height:43px; top:65px; left:683px; z-index:1">
+            <div style="">
+                <form action="productlist.html" method="post" target="t_frame" id="seach_i">
+                    <input type="hidden" name="search_type" id="search_type" value="goods">
+                    <span style="float:left">
+                            <input type="text" name="keyw" class="search_input_style">
+                        </span>
+                    <span style="float:left">
+                            <input type="submit" name="Submit_Seach" value="搜索" style="width:60px;" class="search_button_style">
+                        </span>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+
+        <div id="mokuai_6" style="overflow:hidden;position:absolute;width:357px; height:37px; top:15px; left:600px; z-index:1;text-align:right">
+            <div style="">
+                <div id="userDiv" style="float:left;margin-left: 150px">
+                        <span>
+                            <a href="login.html">登录</a>
+                        </span>
+                    <span style="padding-left:10px;">
+                            <a href="regist.html">注册</a>
+                        </span>
+                </div>
+                <span style="padding-left:10px;" >
+                        <a href="personal.html">
+                            <img  class="profile" >
+                        </a>
+                    </span>
+                <span style="padding-left:10px;" >
+                        <a href="shoppingcart.html">
+                            <img  class="shoppingcart" >
+                        </a>
+                    </span>
+                <span style="padding-left:10px;" >
+                        <a href="favorites.html">
+                            <img  class="favorites" >
+                        </a>
+                    </span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="fullSlide">
+        <div class="bdfullscreen">
+            <ul>
+                <li _src="url(http://a.cdn.site119.com/user/032/image/ABUIABACGAAgo-apnQUo0Jix6QIwoAs4wgM.jpg)">
+                    <a href=""></a>
+                </li>
+                <li _src="url(http://a.cdn.site119.com/user/032/image/1917.jpg)">
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hdfullscreen">
+            <ul></ul>
+        </div>
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+
+    <div class="shop_main clearfix">
+        <div class="shop_main">
+            <div class="breadcrumb">当前位置：商品信息</div>
+            <div class="box_css_3 clearfix" style="margin-bottom:5px;">
+                <div class="box_css_main_3 ">
+                    <div style="float:left;width:370px;">
+                        <a href="productdetail.html" target="_blank">
+                            <img id="mainImg" src="" border="0" width="350" height="350" alt="" style="padding:1px; border:#F0F0F0 1px solid;"></a> <br>
+                        <div class="smallpic" style="margin:5px 0px;background:#fff;">
+                            <div style="width:352px; height:64px; border: #CCCCCC 1px solid">
+                                <div style="float:left;">
+                                    <a href="javascript:void(0)">
+                                        <img src="static/picture/arrow_left.gif" alt="向左" onmouseover="setspeed(1);setfangxiang(1)" onmouseout="setspeed(1)" border="0"></a>
+                                </div>
+                                <div style="float:right;"><a href="javascript:void(0)">
+                                    <img src="static/picture/arrow_right.gif" alt="向右" onmouseover="setspeed(1);setfangxiang(2)" onmouseout="setspeed(1)" border="0"></a>
+                                </div>
+                                <span class="gthumb">
+                                    <div id="demo" onmouseover="ii=1" style="OVERFLOW: hidden; width:322px; height:64px;" onmouseout="ii=0">
+                                        <table cellspacing="0" cellpadding="0" width="330" border="0">
+                                            <tr>
+                                                <td>
+                                                    <div id="demo1">
+                                                        <table width="330" border="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <a target="_blank">
+                                                                        <img src="" alt="" border="0" width="44" height="54" style="margin-right:3px">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div id="demo2"></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </span>
+                                <div style="clear:both"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="float:left; margin-left:10px; line-height:24px; width:500px; overflow:hidden">
+                        <h1 id="goodsName">大家电默认商品名称信息</h1>
+                        <div style="padding-bottom:7px; line-height:18px;" id="goodsBrand">品牌信息</div>
+                        <!--leixing-->
+                        市场价格：<span style="text-decoration:line-through" id="goodsPrice">¥999</span>
+                        <br>
+                        <b>润天价格：<span id="goodsPrice2" style="color: orangered">¥999</span></b>
+                        <br>
+                        商品编号：<span id="goodsNo"></span>
+                        <br>
+                        出厂日期：<span id="createDate"></span>
+                        <br>
+                        <div style="margin-bottom:5px;" class="clearfix">
+                        </div>
+                        <div class="clearfix" style="margin:8px 0px 14px 0px; ">
+                            <span style="float:left; display:block; margin-top:3px; margin-right:5px;" id="gm_num">数量：</span>
+                            <div style="border:#CCCCCC 1px solid; float:left; width:100px; background:#FFFFFF">
+                                <span class="shopnum_1"><a href="javascript:void(0)" onclick="chkshopnum('add')">+</a></span>
+                                <span style="float:left"><input type="text" name="shopnum" value="1" id="shopnum" style="border:0px; padding:6px 4px 4px 4px; width:30px; text-align:center; height:20px; border-left:#CCCCCC 1px solid;border-right:#CCCCCC 1px solid; margin-left:5px;" maxlength="3"></span>
+                                <span class="shopnum_2"><a href="javascript:void(0)" onclick="chkshopnum('del')">-</a></span>
+                            </div>
+                        </div>
+                        <div style="margin:8px 0px;"><input type="hidden" name="proid" id="proid" value="7">
+                            <a href="buy.html" id="buynow" class="shoppingcart-button">立即购买</a>
+                            <a href="javascript:void(0)" id="addToCart"><img src="static/picture/Shop_Cart.gif" border="0"></a>
+                            <a href="javascript:void(0)" id="addToFavorite"><img style="width:70px;height:36px" src="static/picture/favorite.png" border="0"></a>
+                        </div>
+                        <!--leixing-->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="box_css_3 clearfix" style="overflow:hidden" id="pro_detail">
+                <div class="box_css_main_3" id="detailImg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot_all" id="bot_all">
+        <div class="bot_main" id="bot_main" style="position:relative">
+        </div>
+    </div>
+    <script language="JavaScript" src="static/js/product.js"></script>
+</body>
+
+</html>

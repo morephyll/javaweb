@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>后台管理系统-HTML5后台管理系统</title>
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/plug-ins/layerUi/layer.js"></script>
+    <script src="javascript/plug-ins/pagination.js"></script>
+    <script src="javascript/public.js"></script>
+    <script src="javascript/pages/userList.js"></script>
+	<style>
+		#loading{
+			text-align: center;
+			padding: 100px;
+			font-size: 25px;
+		}
+        #searchForm>div{
+            float: left; margin-left: 25px;
+            padding-bottom: 15px;
+        }
+        #searchForm>div::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        th{
+            text-align: center;
+        }
+        .table td{
+            display: table-cell;
+            vertical-align: middle;
+        }
+	</style>
+</head>
+<body>
+<div class="main-wrap">
+    <h1 style="text-align: center;padding:10px">用户管理</h1>
+    <form id="searchForm" style="padding: 20px 50px 20px 50px;">
+        <div>
+            姓名：
+            <input list="userName" name="userName">
+            <datalist id="userName"></datalist>
+        </div>
+
+        <div>
+            <button type="button" id="searchUser" style="width: 60px;padding: 1px !important;"  class="btn btn-primary">查询</button>
+            
+        </div>
+    </form>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th><input type="checkbox"  id="selAll"/></th>
+            <th>用户id</th>
+            <th>用户账号</th>
+            <th>用户密码</th>
+            <th>用户名</th>
+            <th>id属性</th>
+            <th>id编号</th>
+            <th>电话号码</th>
+            <th>邮箱号</th>
+            <th>真实姓名</th>
+            <th>性别</th>
+            <th>生日</th>
+            <th>余额</th>
+            <th>注册时间</th>
+            <th>账户状态</th>
+        </tr>
+        </thead>
+        <tbody id="users">
+        </tbody>
+    </table>
+	<div id="loading"><span class="icon-spin icon-spinner"></span>数据加载中...</div>
+
+    <!--分页-->
+    <div class="panel panel-default">
+        <div class="panel-bd">
+            <div class="pagination"></div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

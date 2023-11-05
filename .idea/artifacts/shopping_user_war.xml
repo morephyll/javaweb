@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="shopping_user:war">
+    <output-path>$PROJECT_DIR$/shopping_user/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>shopping_user</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="test.war">
+      <element id="artifact" artifact-name="shopping_user:war exploded" />
+    </root>
+  </artifact>
+</component>
